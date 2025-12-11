@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+body { 
+    background-color: #09090b; 
+    color: white; 
+    font-family: 'Outfit', sans-serif; 
+}
+
+.ai-scan-overlay {
+    background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.1), transparent);
+}
+
+.hide-scrollbar::-webkit-scrollbar { 
+    display: none; 
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #09090b; 
+}
+::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
